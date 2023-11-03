@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextInput, Button, Container } from '@mantine/core';
+import { TextInput, Button } from '@mantine/core';
 
 interface Character {
   name: string;
@@ -34,7 +34,6 @@ const CharacterForm: React.FC = () => {
 
       if (response.ok) {
         console.log('Character created successfully!');
-        // You can perform further actions on successful creation
       } else {
         console.log('Error creating character');
       }
